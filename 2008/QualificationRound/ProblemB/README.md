@@ -7,7 +7,7 @@ A train timetable specifies departure and arrival time of all trips between A an
 ## Input
 
 The first line of input gives the number of cases, __N__. __N__ test cases follow.
-Each case contains a number of lines. The first line is the turnaround time, T, in minutes. The next line has two numbers on it, __NA__ and __NB__. __NA__ is the number of trips from A to B, and __NB__ is the number of trips from B to A. Then there are __NA__ lines giving the details of the trips from A to B.
+Each case contains a number of lines. The first line is the turnaround time, __T__, in minutes. The next line has two numbers on it, __NA__ and __NB__. __NA__ is the number of trips from A to B, and __NB__ is the number of trips from B to A. Then there are __NA__ lines giving the details of the trips from A to B.
 
 Each line contains two fields, giving the HH:MM departure and arrival time for that trip. The departure time for each trip will be earlier than the arrival time. All arrivals and departures occur on the same day. The trips may appear in any order - they are not necessarily sorted by time. The hour and minute values are both two digits, zero-padded, and are on a 24-hour clock (00:00 through 23:59).
 After these __NA__ lines, there are __NB__ lines giving the departure and arrival times for the trips from B to A.
@@ -23,13 +23,13 @@ Small dataset
 
 0 ≤ __NA__, __NB__ ≤ 20
 
-0 ≤ T ≤ 5
+0 ≤ __T__ ≤ 5
 
 Large dataset
 
 0 ≤ __NA__, __NB__ ≤ 100
 
-0 ≤ T ≤ 60
+0 ≤ __T__ ≤ 60
 
 Sample
 ```

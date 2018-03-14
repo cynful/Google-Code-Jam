@@ -10,37 +10,37 @@ Your task is to tell us how many times the central system will have to switch be
 
 ## Input
 
-The first line of the input file contains the number of cases, N. N test cases follow.
+The first line of the input file contains the number of cases, __N__. __N__ test cases follow.
 
-Each case starts with the number S -- the number of search engines. The next S lines each contain the name of a search engine. Each search engine name is no more than one hundred characters long and contains only uppercase letters, lowercase letters, spaces, and numbers. There will not be two search engines with the same name.
+Each case starts with the number __S__ -- the number of search engines. The next __S__ lines each contain the name of a search engine. Each search engine name is no more than one hundred characters long and contains only uppercase letters, lowercase letters, spaces, and numbers. There will not be two search engines with the same name.
 
-The following line contains a number Q -- the number of incoming queries. The next Q lines will each contain a query. Each query will be the name of a search engine in the case.
+The following line contains a number __Q__ -- the number of incoming queries. The next __Q__ lines will each contain a query. Each query will be the name of a search engine in the case.
 
 ## Output
 
 For each input case, you should output:
 
 ```
-Case #X: Y
+Case #__X__: __Y__
 ```
 
-where X is the number of the test case and Y is the number of search engine switches. Do not count the initial choice of a search engine as a switch.
+where __X__ is the number of the test case and Y is the number of search engine switches. Do not count the initial choice of a search engine as a switch.
 
 Limits
 
-0 < N ≤ 20
+0 < __N__ ≤ 20
 
 Smallest dataset
 
-2 ≤ S ≤ 10
+2 ≤ __S__ ≤ 10
 
-0 ≤ Q ≤ 100
+0 ≤ __Q__ ≤ 100
 
 Large dataset
 
-2 ≤ S ≤ 100
+2 ≤ __S__ ≤ 100
 
-0 ≤ Q ≤ 1000
+0 ≤ __Q__ ≤ 1000
 
 Sample
 ```
