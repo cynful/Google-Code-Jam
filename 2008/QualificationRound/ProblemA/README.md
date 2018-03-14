@@ -21,7 +21,7 @@ The following line contains a number __Q__ -- the number of incoming queries. Th
 For each input case, you should output:
 
 ```
-Case #__X__: __Y__
+Case #X: Y
 ```
 
 where __X__ is the number of the test case and Y is the number of search engine switches. Do not count the initial choice of a search engine as a switch.
