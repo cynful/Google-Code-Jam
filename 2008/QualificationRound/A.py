@@ -5,19 +5,25 @@
 
 def switchengines():
     numeng = input()
+    if numeng == 0: return 0
     listeng = [raw_input() for j in range(numeng)]
     numquer = input()
+    if numquer == 0: return 0
     listquer = [raw_input() for j in range(numquer)]
    
-    freq =  {j:listquer.count(j) for j in listeng}
-
     switches = 0
-    curreng = min(freq, key=freq.get)
-    for j in listquer:
-        freq[j] -= 1
-        if j == curreng:
-            switches += 1
-            curreng = min(freq, key=freq.get)
+    while listquer:
+        longest = 0
+        for j in listeng:
+            if j not in listquer:
+                listquer = []
+                break
+            if listquer.index(j) > longest:
+                longest = listquer.index(j)
+        if not listquer:
+            break
+        switches += 1
+        listquer = listquer[longest:]
 
     return int(switches)
 
