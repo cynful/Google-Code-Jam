@@ -1,14 +1,12 @@
 #!/usr/bin/python
 #
-# Google-Code-Jam/2008/QualificationRound/A.py
+# google-code-jam/2008/QualificationRound/ProblemA/A.py
 # Usage: python A.py < input.in > output.out
 
 def switchengines():
     numeng = input()
-    if numeng == 0: return 0
     listeng = [raw_input() for j in range(numeng)]
     numquer = input()
-    if numquer == 0: return 0
     listquer = [raw_input() for j in range(numquer)]
    
     switches = 0
