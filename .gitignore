@@ -1,2 +1,5 @@
 # Google Code Jam output
 *.out
+
+# MacOS
+*.swp
