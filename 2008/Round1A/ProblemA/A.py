@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# google-code-jam/2008/QualificationRound/ProblemA/A.py
+# google-code-jam/2008/Round1A/ProblemA/A.py
 # Usage: python A.py < input.in > output.out
 
 def minscalarproduct():
