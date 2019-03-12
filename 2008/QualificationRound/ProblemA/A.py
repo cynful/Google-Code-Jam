@@ -1,13 +1,13 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 #
 # google-code-jam/2008/QualificationRound/ProblemA/A.py
 # Usage: python A.py < input.in > output.out
 
 def switchengines():
-    numeng = input()
-    listeng = [raw_input() for j in range(numeng)]
-    numquer = input()
-    listquer = [raw_input() for j in range(numquer)]
+    numeng = eval(input())
+    listeng = [input() for j in range(numeng)]
+    numquer = eval(input())
+    listquer = [input() for j in range(numquer)]
    
     switches = 0
     while listquer:
@@ -27,5 +27,5 @@ def switchengines():
 
 
 
-for i in range(input()):
-    print "Case #%d: %d" % (i+1, switchengines())
+for i in range(eval(input())):
+    print("Case #%d: %d" % (i+1, switchengines()))
