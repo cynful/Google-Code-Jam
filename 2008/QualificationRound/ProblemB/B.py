@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 #
 # google-code-jam/2008/QualificationRound/ProblemB/B.py
 # Usage: python B.py < input.in > output.out
@@ -21,12 +21,12 @@ def coordtrains(currTrains, destTrains, currAvail, destAvail, numCurr, numDest):
 
 def trainschedule():
 
-    turntime = input()
-    na, nb = map(int, raw_input().split())
+    turntime = eval(input())
+    na, nb = list(map(int, input().split()))
 
     sched = []
     for j in range(na+nb):
-        dept, arri = raw_input().split()
+        dept, arri = input().split()
         dmin = int(dept[0:2])*60 + int(dept[3:5])
         amin = int(arri[0:2])*60 + int(arri[3:5]) + turntime
         sched.append((dmin, amin))
@@ -69,5 +69,5 @@ def trainschedule():
 
 
 
-for i in range(input()):
-    print "Case #%d: %s" % (i+1, trainschedule())
+for i in range(eval(input())):
+    print("Case #%d: %s" % (i+1, trainschedule()))

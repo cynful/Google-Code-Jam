@@ -1,12 +1,12 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 #
 # google-code-jam/2008/Round1A/ProblemA/A.py
 # Usage: python A.py < input.in > output.out
 
 def minscalarproduct():
-    variables = input()
-    x = map(int, raw_input().split())
-    y = map(int, raw_input().split())
+    variables = eval(input())
+    x = list(map(int, input().split()))
+    y = list(map(int, input().split()))
    
     x.sort()
     y.sort()
@@ -19,5 +19,5 @@ def minscalarproduct():
 
 
 
-for i in range(input()):
-    print "Case #%d: %d" % (i+1, minscalarproduct())
+for i in range(eval(input())):
+    print("Case #%d: %d" % (i+1, minscalarproduct()))
